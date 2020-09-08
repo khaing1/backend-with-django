@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h1>Menu Lists</h1>
+  </head>
+  <body>
+    {%if menus %} {% for menu_item in menus %}
+
+    <div><span>{{menu_item.name}} </span> {{menu_item.price}}</div>
+
+    {%endfor%} {% endif %}
+  </body>
+</html>

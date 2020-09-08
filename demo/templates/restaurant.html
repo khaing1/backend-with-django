@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <h1>Restaurant Lists</h1>
+  </head>
+  <body>
+    {%if restaurants %} {% for restaurant in restaurants %}
+    <div>
+      <a href="menu/{{restaurant.id}}"> {{restaurant.name}} </a>
+    </div>
+    {%endfor%} {% endif %}
+  </body>
+</html>
